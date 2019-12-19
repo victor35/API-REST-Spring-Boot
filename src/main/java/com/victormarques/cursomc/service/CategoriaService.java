@@ -1,5 +1,6 @@
 package com.victormarques.cursomc.service;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,5 +44,9 @@ public class CategoriaService {
 		} catch(DataIntegrityViolationException e) {
 			throw new DataIntegrityException("Nao e possivel excluir uma categoria que tem produtos");
 		}
+	}
+	
+	public List<Categoria> findAll() {
+		return repo.findAll();
 	}
 }
