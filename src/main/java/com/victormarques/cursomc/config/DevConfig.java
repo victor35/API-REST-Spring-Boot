@@ -10,8 +10,6 @@ import org.springframework.context.annotation.Profile;
 
 import com.victormarques.cursomc.service.DBService;
 
-import net.bytebuddy.dynamic.loading.ClassReloadingStrategy.Strategy;
-
 @Configuration
 @Profile("dev")
 public class DevConfig {
